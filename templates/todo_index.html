@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>todo index</title>
+    <style>
+        nav {
+            font-size: large;
+            background: black;
+        }
+        .nav-item {
+            display:inline-block;
+            color: white;
+            padding: 20px;
+            width:15%;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+    <a class="nav-item" href="http://www.wtfafk.com:3000/login">登录</a>
+    <a class="nav-item" href="http://www.wtfafk.com:3000/register">注册</a>
+    <a class="nav-item" href="http://www.wtfafk.com:3000/weibo/index">微博</a>
+    <a class="nav-item" href="http://www.wtfafk.com:3000/admin">管理</a>
+</nav>
     <form action="/todo/add" method="post">
         <input name="task">
         <button>add todo</button>
