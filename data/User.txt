@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "username": "gua",
+    "password": "38348c0b4e4645242dcef95e248b022c18287b0012607c820cf51b870b35b13a"
+  },
+  {
+    "id": 2,
+    "username": "瓜",
+    "password": "1be6af03717a0906a774a129ac467fcea8f89849df003548a8039cffffb12baf"
+  }
+]
