@@ -1,4 +1,4 @@
-import json
+import json,os
 
 from utils import log
 
@@ -9,12 +9,16 @@ def save(data, path):
     path 是保存文件的路径
     """
     s = json.dumps(data, indent=2, ensure_ascii=False)
+    dir = os.path.dirname(__file__)
+    path = os.path.join(dir,path)
     with open(path, 'w+', encoding='utf-8') as f:
         # log('save', path, s, data)
         f.write(s)
 
 
 def load(path):
+    dir = os.path.dirname(__file__)
+    path = os.path.join(dir, path)
     with open(path, 'r', encoding='utf-8') as f:
         s = f.read()
         # log('load', s)
