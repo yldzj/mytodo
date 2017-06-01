@@ -1,3 +1,5 @@
 .idea
 __pycache_
 *.pyc_
+data
+log.gua.txt
